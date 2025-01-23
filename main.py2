@@ -1,0 +1,26 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+# Get started with interactive Python!
+# Supports Python Modules: builtins, math,pandas, scipy 
+# matplotlib.pyplot, numpy, operator, processing, pygal, random, 
+# re, string, time, turtle, urllib.request
+
+# Вводим строку
+input_string = input("Введите строку: ")
+
+# Инициализируем переменные для новой строки и счётчика удалённых символов
+new_string = ""
+removed_count = 0
+
+# Проходим по каждому символу в исходной строке
+for char in input_string:
+    if char == '.':
+        # Если символ точка, увеличиваем счётчик
+        removed_count += 1
+    else:
+        # Если не точка, добавляем его в новую строку
+        new_string += char
+
+# Выводим результат
+print("Новая строка:", new_string)
+print("Количество удалённых символов:", removed_count)
